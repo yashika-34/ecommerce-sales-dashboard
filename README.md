@@ -99,7 +99,7 @@ Lifestyle and home-related products consistently perform well.
 Certain Brazilian states contribute significantly higher revenue compared to others.
 Revenue concentration indicates strong regional demand patterns.
 📸 Dashboard Preview
-<img width="100%" alt="Dashboard Preview" src="../dashboard/dashboard1.png">
+<img width="100%" alt="Dashboard Preview" src="/dashboard/dashboard1.png">
 🧮 DAX Measures Used
 Total Revenue
 Total_Revenue =
