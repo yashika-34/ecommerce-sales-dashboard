@@ -1,128 +1,245 @@
-📊 Olist E-Commerce Analytics Dashboard
-📌 Project Overview
+# 📊 Olist E-Commerce Analytics Dashboard
 
-This project presents an interactive E-Commerce Sales Analytics Dashboard built using Power BI and the Olist Brazilian E-Commerce Dataset. The dashboard provides insights into revenue, customer behavior, order trends, payment preferences, product performance, and geographical sales distribution.
+## 📌 Project Overview
 
-The goal of this project is to demonstrate data cleaning, data modeling, DAX calculations, and business intelligence skills required for a Data Analyst role.
+This project presents an interactive **E-Commerce Sales Analytics Dashboard** built using **Power BI** and the **Olist Brazilian E-Commerce Dataset**.
 
-🎯 Business Objectives
-Analyze overall business performance.
-Identify top-performing product categories.
-Understand customer purchasing behavior.
-Track order fulfillment status.
-Analyze payment method preferences.
-Discover high-revenue states and regions.
-Generate actionable business insights.
-🛠️ Tools & Technologies Used
-Power BI
-SQL
-DAX
-Microsoft Excel
-CSV Dataset
-Data Cleaning & Transformation
-Business Intelligence & Visualization
-📂 Dataset Information
+The dashboard provides insights into:
 
-Dataset: Olist Brazilian E-Commerce Dataset
+* Revenue Performance
+* Customer Behavior
+* Order Trends
+* Payment Preferences
+* Product Performance
+* Geographic Sales Distribution
 
-The dataset contains information about:
+The primary objective of this project is to demonstrate:
 
-Customers
-Orders
-Products
-Payments
-Reviews
-Sellers
-Geolocation Data
-📈 Dashboard Features
-1️⃣ Revenue Trend Analysis
+* Data Cleaning & Preparation
+* Data Modeling
+* SQL Analysis
+* DAX Calculations
+* Business Intelligence Reporting
+* Dashboard Design
 
-Tracks total revenue over time to identify sales patterns and seasonal trends.
+---
 
-2️⃣ Payment Method Analysis
+## 🎯 Business Objectives
 
-Visualizes revenue contribution by:
+* Analyze overall business performance.
+* Identify top-performing product categories.
+* Understand customer purchasing behavior.
+* Track order fulfillment status.
+* Analyze payment method preferences.
+* Discover high-revenue states and regions.
+* Generate actionable business insights.
 
-Credit Card
-Boleto
-Voucher
-Debit Card
-3️⃣ Order Status Distribution
+---
 
-Shows order lifecycle performance including:
+## 🛠️ Tools & Technologies Used
 
-Delivered
-Shipped
-Processing
-Approved
-Cancelled
-Unavailable
-4️⃣ KPI Cards
+* Power BI
+* SQL
+* DAX
+* Microsoft Excel
+* CSV Dataset
+* Data Cleaning & Transformation
+* Business Intelligence & Visualization
 
-Key business metrics:
+---
 
-KPI	Value
-Total Revenue	12.72M+
-Total Customers	74K+
-Total Orders	76K+
-5️⃣ Product Category Performance
+## 📂 Dataset Information
 
-Top-performing categories based on revenue generation:
+### Dataset:
 
-Health & Beauty
-Watches & Gifts
-Bed Bath & Table
-Sports & Leisure
-Computers Accessories
-6️⃣ State-wise Revenue Analysis
+**Olist Brazilian E-Commerce Dataset**
 
-Analyze revenue contribution across Brazilian states to identify high-performing regions.
+The dataset contains information related to:
 
-7️⃣ Revenue vs Orders Analysis
+* Customers
+* Orders
+* Products
+* Payments
+* Reviews
+* Sellers
+* Geolocation Data
 
-Scatter plot analysis showing the relationship between:
+---
 
-Revenue
-Orders
-Customers
-📊 Key Insights
-💰 Revenue Performance
-Generated over 12.7 Million in total revenue.
-Majority of transactions were completed using Credit Cards.
-📦 Order Fulfillment
-More than 97% of orders were successfully delivered.
-Cancellation and unavailable orders represent a very small percentage.
-🛍️ Product Performance
-Health & Beauty emerged as the highest revenue-generating category.
-Lifestyle and home-related products consistently perform well.
-🌎 Geographic Analysis
-Certain Brazilian states contribute significantly higher revenue compared to others.
-Revenue concentration indicates strong regional demand patterns.
-📸 Dashboard Preview
-<img width="100%" alt="Dashboard Preview" src="/dashboard/dashboard1.png">
-🧮 DAX Measures Used
-Total Revenue
+# 📈 Dashboard Features
+
+## 1️⃣ Revenue Trend Analysis
+
+Tracks total revenue over time to identify:
+
+* Sales patterns
+* Growth trends
+* Seasonal fluctuations
+
+---
+
+## 2️⃣ Payment Method Analysis
+
+Revenue contribution by payment methods:
+
+* Credit Card
+* Boleto
+* Voucher
+* Debit Card
+
+---
+
+## 3️⃣ Order Status Distribution
+
+Monitor order lifecycle performance:
+
+* Delivered
+* Shipped
+* Processing
+* Approved
+* Cancelled
+* Unavailable
+
+---
+
+## 4️⃣ KPI Cards
+
+| KPI                | Value   |
+| ------------------ | ------- |
+| 💰 Total Revenue   | 12.72M+ |
+| 👥 Total Customers | 74K+    |
+| 📦 Total Orders    | 76K+    |
+
+---
+
+## 5️⃣ Product Category Performance
+
+Top-performing product categories:
+
+* Health & Beauty
+* Watches & Gifts
+* Bed Bath & Table
+* Sports & Leisure
+* Computers & Accessories
+
+---
+
+## 6️⃣ State-wise Revenue Analysis
+
+Analyze revenue contribution across Brazilian states to identify:
+
+* High-performing regions
+* Revenue concentration
+* Regional demand patterns
+
+---
+
+## 7️⃣ Revenue vs Orders Analysis
+
+Scatter plot analysis showing relationships between:
+
+* Revenue
+* Orders
+* Customers
+
+---
+
+# 📊 Key Insights
+
+## 💰 Revenue Performance
+
+* Generated over **12.7 Million** in total revenue.
+* Majority of transactions were completed using **Credit Cards**.
+
+### Revenue Trend
+
+![Revenue Trend](dashboard/revenue_trend.png)
+
+---
+
+## 📦 Order Fulfillment
+
+* More than **97% of orders** were successfully delivered.
+* Cancelled and unavailable orders represent only a small percentage.
+
+### Order Status Distribution
+
+![Order Status](dashboard/order_status.png)
+
+---
+
+## 🛍️ Product Performance
+
+* **Health & Beauty** emerged as the highest revenue-generating category.
+* Lifestyle and home-related products consistently performed well.
+
+### Product Category Revenue
+
+![Category Revenue](dashboard/category_revenue.png)
+
+---
+
+## 🌎 Geographic Analysis
+
+* Certain Brazilian states contribute significantly higher revenue than others.
+* Revenue concentration indicates strong regional demand.
+
+---
+
+# 📸 Dashboard Preview
+
+## 📊 Power BI Dashboard
+
+<p align="center">
+    <img src="dashboard/dashboard1.png" alt="Olist Ecommerce Dashboard" width="100%">
+</p>
+
+---
+
+# 🧮 DAX Measures Used
+
+### Total Revenue
+
+```DAX
 Total_Revenue =
 SUM(payments[payment_value])
-Total Orders
+```
+
+### Total Orders
+
+```DAX
 Total_Orders =
 DISTINCTCOUNT(orders[order_id])
-Total Customers
+```
+
+### Total Customers
+
+```DAX
 Total_Customers =
 DISTINCTCOUNT(customers[customer_unique_id])
-Revenue Per Customer
+```
+
+### Revenue Per Customer
+
+```DAX
 Revenue_Per_Customer =
 DIVIDE(
     [Total_Revenue],
     [Total_Customers]
 )
-🚀 Project Outcomes
+```
+
+---
+
+# 🚀 Project Outcomes
 
 This project demonstrates:
 
 ✔ Data Cleaning & Preparation
 
 ✔ Data Modeling
+
+✔ SQL Analysis
 
 ✔ DAX Calculations
 
@@ -133,25 +250,12 @@ This project demonstrates:
 ✔ Data Visualization
 
 ✔ Business Insight Generation
-## 📊 Power BI Dashboard
 
-### Dashboard Overview
+---
 
-This interactive dashboard provides insights into:
+# 📁 Repository Structure
 
-- Revenue Trends
-- Customer Analysis
-- Order Performance
-- Payment Preferences
-- Product Category Performance
-- State-wise Revenue Distribution
-
-### Dashboard Preview
-
-<p align="center">
-  <img src="../dashboard/dashboard1.png" alt="Olist Ecommerce Dashboard" width="100%">
-</p>
-📁 Repository Structure
+```text
 Olist-Ecommerce-Dashboard/
 │
 ├── data/
@@ -160,20 +264,29 @@ Olist-Ecommerce-Dashboard/
 │
 ├── dashboard/
 │   ├── dashboard.pbix
-│   └── dashboard_preview.png
+│   ├── dashboard1.png
+│   ├── category_revenue.png
+│   ├── order_status.png
+│   └── revenue_trend.png
 │
 ├── sql/
 │   └── ecommerce_analysis.sql
 │
-├── README.md
-👩‍💻 Author
+└── README.md
+```
 
-Yashika Garg
+---
+
+# 👩‍💻 Author
+
+**Yashika Garg**
 
 Data Analytics | SQL | Power BI | Python
 
 GitHub: https://github.com/yashika-34
 
-⭐ If you found this project useful, don't forget to star the repository! ⭐
+---
 
-This dashboard showcases end-to-end Data Analytics workflow from data preparation to business intelligence reporting. 🚀
+⭐ If you found this project useful, don't forget to star the repository!
+
+This dashboard showcases the complete **Data Analytics workflow** from data preparation to business intelligence reporting using real-world e-commerce data. 🚀
