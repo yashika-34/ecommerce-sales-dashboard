@@ -182,7 +182,7 @@ Scatter plot analysis showing the relationship between:
 ## 📊 Complete Power BI Dashboard
 
 <p align="center">
-  <img src="screenshots/dashboard.png" alt="Power BI Dashboard" width="100%">
+  <img src="dashboard/dashboard1.png" alt="Power BI Dashboard" width="100%">
 </p>
 
 ---
