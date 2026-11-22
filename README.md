@@ -1,5 +1,12 @@
 # 📊 Olist E-Commerce Analytics Dashboard
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-yellow?style=for-the-badge&logo=powerbi" />
+  <img src="https://img.shields.io/badge/SQL-Data%20Analysis-blue?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dataset-Brazilian%20E--Commerce-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Complete-success?style=for-the-badge" />
+</p>
+
 ## 📌 Project Overview
 
 This project presents an interactive **E-Commerce Sales Analytics Dashboard** built using **Power BI** and the **Olist Brazilian E-Commerce Dataset**.
